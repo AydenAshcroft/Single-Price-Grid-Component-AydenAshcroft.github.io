@@ -1,0 +1,241 @@
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+
+--cyan: hsl(179, 62%, 43%);
+--bright-yellow: hsl(71, 73%, 54%);
+--light-gray: hsl(204, 43%, 93%);
+--grayish-blue: hsl(179, 47%, 52%);
+
+}
+
+html {
+
+    background-color: var(--light-gray);
+}
+
+body {
+
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    
+}
+
+.container {
+
+    padding: 60px 40px;
+
+}
+
+.card {
+    
+    display:flex;
+    flex-direction: column;
+    padding: 24px;
+
+}
+
+ul li {
+
+    list-style: none;
+    color: #a7a6a6;
+    
+
+} 
+
+/*card 1*/
+
+.card-1 {
+
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+   
+}
+
+.card-1 h2 {
+
+    color: var(--grayish-blue);
+    padding-bottom: 20px;
+}
+
+.card-1 h3 {
+
+    color: var(--bright-yellow);
+    padding-bottom: 20px;
+
+}
+
+.card-1 p {
+
+    color: #a7a6a6;
+    padding-bottom:  10px;
+    line-height: 1.8;
+}
+
+
+
+
+
+/*card 2*/
+.card-2 {
+
+    background-color: var(--cyan); 
+    color: white;
+
+}
+
+.card-2 h2 {
+
+    padding-bottom: 20px;
+}
+
+.price {
+
+    display: inline-flex;
+    padding-bottom: 12px;
+    
+
+}
+
+.price h3 {
+
+    padding-right: 10px;
+    font-size: 35px;
+    
+}
+
+.price p {
+
+    align-self:center;
+    color: var(--light-gray);
+}
+
+.btn {
+
+    padding: 17px 0 17px 0;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    background-color: var(--bright-yellow);
+    border-radius: 6px;
+    color: white;
+    border: none;
+    width: 100%;
+    font-weight:bold;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+
+/*card 3*/
+.card-3 {
+
+    background-color: var(--grayish-blue);
+    color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+
+
+
+.card-3 h2 {
+
+    padding-bottom:  15px;
+}
+
+.card-3 ul li {
+    
+    color: var(--light-gray);
+    line-height: 1.4;
+    
+}
+
+
+
+.attribution { 
+
+    font-size: 11px; text-align: center; 
+
+}
+.attribution a {
+    
+    color: hsl(228, 45%, 44%);
+    
+
+}
+
+@media  only screen and (min-width: 1440px) {
+
+
+
+    body {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow:hidden;
+        height: 100vh;
+
+    }
+
+    .container {
+
+        width: 600px;
+        
+        
+
+    }
+    
+    
+    .card-1 {
+        
+        
+       
+        padding-right: 0px;
+        margin-right: 0px;
+        
+        
+
+    }
+
+    .card-2 {
+       
+        border-radius: 0 0 0 10px;
+        width: 50%;
+        
+        
+    }
+
+    .card-3 {
+
+        border-radius: 0 0 10px 0; 
+        width: 50%;
+        padding-left: 35px;
+        
+        
+    }
+
+    
+    .bottom {
+
+        
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        
+
+
+    }
+
+    .bottom .card {
+
+        justify-items: center;
+    }
+
+    
+}
